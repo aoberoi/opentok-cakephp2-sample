@@ -97,6 +97,9 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
+// Load OpenTok configuration
+Configure::load('opentok');
+
 // Load Composer autoload
 require APP . 'vendor/autoload.php';
 

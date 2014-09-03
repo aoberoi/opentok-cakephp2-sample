@@ -23,6 +23,11 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**
+ * Add a temporary route just to see if the OpenTok SDK is generating values
+ */
+	Router::connect('/opentok', array('controller' => 'pages', 'action' => 'opentok'));
+
+/**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
  */

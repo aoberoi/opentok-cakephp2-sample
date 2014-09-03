@@ -1,6 +1,7 @@
 {
   "name": "example-app",
   "require": {
-    "cakephp/cakephp": "2.5.*"
+    "cakephp/cakephp": "2.5.*",
+    "opentok/opentok": "2.2.*"
   }
 }

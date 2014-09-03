@@ -1,0 +1,12 @@
+<?php
+
+/*
+ * Fill in your own API Key and API Secret from the TokBox Dashboard (https://dashboard.tokbox.com)
+ */
+
+$config = array(
+    'opentok' => array(
+        'key' => 000000,
+        'secret' => 'abcdef1234567890abcdef'
+    )
+);

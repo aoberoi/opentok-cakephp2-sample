@@ -11,6 +11,8 @@
 
 App::uses('AppController', 'Controller');
 
+use OpenTok\OpenTok;
+
 /**
  * Static content controller
  *
@@ -64,4 +66,14 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+
+    public function opentok() {
+        $opentok = new OpenTok(Configure::read('opentok.key'), Configure::read('opentok.secret'));
+        $session = $opentok->createSession();
+        $token = $session->generateToken();
+        $this->set(array(
+            'sessionId' => $session->getSessionId(),
+            'token' => $token
+        ));
+    }
 }
